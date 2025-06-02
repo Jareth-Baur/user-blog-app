@@ -18,7 +18,15 @@ export default function BlogPage() {
 
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6">Blog Posts</h1>
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-3xl font-bold">Blog Posts</h1>
+        <a
+          href="/blog/add"
+          className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+        >
+          + Add Post
+        </a>
+      </div>
       <div className="grid md:grid-cols-2 gap-6">
         {posts.map(post => (
           <a

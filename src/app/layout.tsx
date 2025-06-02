@@ -25,15 +25,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-900`}>
-        <nav className="bg-blue-600 text-white px-6 py-4 shadow-md">
-          <ul className="flex gap-6 font-semibold text-lg">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/users">Users</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-gray-100`}>
+        <nav className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 px-8 py-4 shadow-lg border-b border-gray-800">
+          <ul className="flex gap-8 font-semibold text-lg">
+            <li>
+              <Link
+                href="/"
+                className="transition-colors duration-200 hover:text-blue-400"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/users"
+                className="transition-colors duration-200 hover:text-blue-400"
+              >
+                Users
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/blog"
+                className="transition-colors duration-200 hover:text-blue-400"
+              >
+                Blog
+              </Link>
+            </li>
           </ul>
         </nav>
-        <main className="max-w-3xl mx-auto py-6 px-4">{children}</main>
+        <main className="max-w-3xl mx-auto py-8 px-4">{children}</main>
       </body>
     </html>
   );
