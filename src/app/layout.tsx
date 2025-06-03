@@ -52,6 +52,14 @@ export default function RootLayout({
                 Blog
               </Link>
             </li>
+            <li>
+              <Link
+                href="/categories"
+                className="transition-colors duration-200 hover:text-blue-400"
+              >
+                Categories
+              </Link>
+            </li>
           </ul>
         </nav>
         <main className="max-w-3xl mx-auto py-8 px-4">{children}</main>
