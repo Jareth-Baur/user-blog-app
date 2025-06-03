@@ -26,43 +26,43 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-gray-100`}>
-        <nav className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 px-8 py-4 shadow-lg border-b border-gray-800">
-          <ul className="flex gap-8 font-semibold text-lg">
-            <li>
-              <Link
-                href="/"
-                className="transition-colors duration-200 hover:text-blue-400"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/users"
-                className="transition-colors duration-200 hover:text-blue-400"
-              >
-                Users
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/blog"
-                className="transition-colors duration-200 hover:text-blue-400"
-              >
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/categories"
-                className="transition-colors duration-200 hover:text-blue-400"
-              >
-                Categories
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <main className="max-w-3xl mx-auto py-8 px-4">{children}</main>
+      <nav className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 px-8 py-4 shadow-lg border-b border-gray-800">
+        <ul className="flex gap-8 font-semibold text-lg text-white">
+        <li>
+          <Link
+          href="/"
+          className="transition-colors duration-200 hover:text-blue-400"
+          >
+          Home
+          </Link>
+        </li>
+        <li>
+          <Link
+          href="/users"
+          className="transition-colors duration-200 hover:text-blue-400"
+          >
+          Users
+          </Link>
+        </li>
+        <li>
+          <Link
+          href="/blog"
+          className="transition-colors duration-200 hover:text-blue-400"
+          >
+          Blog
+          </Link>
+        </li>
+        <li>
+          <Link
+          href="/categories"
+          className="transition-colors duration-200 hover:text-blue-400"
+          >
+          Categories
+          </Link>
+        </li>
+        </ul>
+      </nav>
+      <main className="max-w-3xl mx-auto py-8 px-4">{children}</main>
       </body>
     </html>
   );
